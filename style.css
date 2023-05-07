@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  height: 200vh;
+}
+.header_site {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_site .menu_main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  transition: all 300ms ease-out;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header_site .menu_main.isSrolling {
+  padding: 15px 100px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 300ms ease-out;
+}
+.header_site .menu_main .logo_brand {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+.header_site .menu_main .logo_brand img {
+  width: 100%;
+  height: 100%;
+}
+.header_site .menu_main .menu {
+  display: flex;
+  width: fit-content;
+}
+.header_site .menu_main .menu .menu_items {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_site .menu_main .menu .menu_items a {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #232526;
+}
+.header_site .menu_main .enter_to_site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_site .menu_main .enter_to_site span {
+  font-size: 22px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.header_site .menu_main .enter_to_site ion-icon {
+  font-size: 42px;
+  color: #232526;
+  margin-top: 10px;
+}
+.header_site .header_content {
+  font-size: 48px;
+  color: #f1f1f1;
+}
+.header_site .header_content span {
+  text-transform: uppercase;
+  color: #f1f1f1;
+  text-decoration: wavy #f8b313 underline 5%;
+}
